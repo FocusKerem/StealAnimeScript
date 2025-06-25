@@ -128,8 +128,9 @@ while true do
     end
 end
 
-
+Player.OnTeleport:Connect(function(State)
 queueonteleport([[
-wait(3)
+wait(1.5)
 loadstring(game:HttpGet('https://raw.githubusercontent.com/FocusKerem/StealAnimeScript/refs/heads/main/Source.lua'))()
 ]])
+end)
