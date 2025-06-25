@@ -129,4 +129,5 @@ while true do
     end
 end
 
-
+queueonteleport('loadstring(game:HttpGet('https://raw.githubusercontent.com/FocusKerem/StealAnimeScript/refs/heads/main/Source.lua'))()
+')
