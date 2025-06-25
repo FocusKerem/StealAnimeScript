@@ -1,4 +1,3 @@
-
 local Player = game.Players.LocalPlayer
 local bases = game.Workspace:WaitForChild("Bases")
 local base = bases:FindFirstChild(Player.Name)
