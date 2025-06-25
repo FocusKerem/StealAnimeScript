@@ -7,6 +7,14 @@ local process = false
 local unlocked = false
 local name
 
+
+Player.OnTeleport:Connect(function(State)
+queueonteleport([[
+wait(1.5)
+loadstring(game:HttpGet('https://raw.githubusercontent.com/FocusKerem/StealAnimeScript/refs/heads/main/Source.lua'))()
+]])
+end)
+
 local lockPart = base:WaitForChild("LockPart")
 firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, lockPart, 0)
 firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, lockPart, 1)
@@ -127,10 +135,3 @@ while true do
         process = false
     end
 end
-
-Player.OnTeleport:Connect(function(State)
-queueonteleport([[
-wait(1.5)
-loadstring(game:HttpGet('https://raw.githubusercontent.com/FocusKerem/StealAnimeScript/refs/heads/main/Source.lua'))()
-]])
-end)
